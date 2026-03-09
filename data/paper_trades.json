@@ -1,0 +1,18 @@
+[
+    {
+        "symbol": "COHANCE",
+        "entry_price": 305.0,
+        "target_price": 325.0,
+        "stop_loss": 285.0,
+        "direction": "LONG",
+        "catalyst_summary": ""
+    },
+    {
+        "symbol": "EDELWEISS",
+        "entry_price": 115.0,
+        "target_price": 127.6,
+        "stop_loss": 105.0,
+        "direction": "LONG",
+        "catalyst_summary": ""
+    }
+]

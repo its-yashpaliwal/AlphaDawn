@@ -1,0 +1,545 @@
+{
+    "picks": [
+        {
+            "symbol": "TCS",
+            "exchange": "NSE",
+            "direction": "LONG",
+            "entry_price": 2552.1,
+            "target_price": 3000.0,
+            "stop_loss": 2502.1,
+            "confidence": 0.7,
+            "catalyst_summary": "Catalyst news with high confidence (0.8) suggests a positive impact on TCS.",
+            "reasoning": "Given the stock's downtrend below 50-DMA and RSI of 17.99, we're taking a conservative approach with a tighter stop-loss. The support level at \u20b92552.1 offers a good entry point, and the target price of \u20b93000.0 provides a risk-reward ratio of 2.5:1."
+        }
+    ],
+    "news": [
+        {
+            "source": "nse_announcement",
+            "headline": "Disclosure under SEBI Takeover Regulations",
+            "body": "Disclosure under SEBI Takeover Regulations",
+            "url": "https://nsearchives.nseindia.com/corporate/team_sandeshc_02032026123425_KIL_SAST.pdf",
+            "published_at": "02-Mar-2026 12:39:25",
+            "content_hash": "d9c17d625a6891a45699b13c567ba10401d152f72a4236251802732df3c2a7f5",
+            "relevance_score": 0.4,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "economictimes",
+            "headline": "Sebi deploys AI tool 'Sudarshan', removes 1.2 lakh misleading 'finfluencer' posts: Tuhin Kanta Pandey",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/sebi-deploys-ai-tool-sudarshan-removes-1-2-lakh-misleading-finfluencer-posts-tuhin-kanta-pandey/articleshow/128939153.cms",
+            "published_at": null,
+            "content_hash": "e10c677c23d935d6e1dc4cabb9ac8ca6388ac881511aff3bc037f9cb60f247f9",
+            "relevance_score": 0.37,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "General Updates",
+            "body": "General Updates",
+            "url": "https://nsearchives.nseindia.com/corporate/CAMLINFINE_02032026130251_Un-audited_Financial_Results_CFS_31122025.pdf",
+            "published_at": "02-Mar-2026 13:03:13",
+            "content_hash": "4eb7c2ff219b6d978dbea02e7744f263a123a68a1b2fa67a217f5caa5a307e6e",
+            "relevance_score": 0.25,
+            "is_catalyst": "NOISE",
+            "catalyst_confidence": 1.0,
+            "related_symbols": ""
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "Appointment",
+            "body": "Appointment",
+            "url": "https://nsearchives.nseindia.com/corporate/APOLLOPIPE_02032026125756_SIGNEDINTIMATIONCOO02032026.pdf",
+            "published_at": "02-Mar-2026 12:58:30",
+            "content_hash": "8a4f957e08cbc33df660502ab227e0c4d43be78d9ebf135cb4d9faccb0d5be5e",
+            "relevance_score": 0.25,
+            "is_catalyst": "NOISE",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+            "body": "Analysts/Institutional Investor Meet/Con. Call Updates",
+            "url": "https://nsearchives.nseindia.com/corporate/MOTHERSON_02032026125508_SE_Disclosure_Investor_Meeting.pdf",
+            "published_at": "02-Mar-2026 12:56:40",
+            "content_hash": "7f696ce006df37506bf5c8e1c71a63e528314508fee9ed9e3bdbaa9ba00fe8d5",
+            "relevance_score": 0.25,
+            "is_catalyst": "NOISE",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "Copy of Newspaper Publication",
+            "body": "Copy of Newspaper Publication",
+            "url": "https://nsearchives.nseindia.com/corporate/IGPL_02032026124855_NewspaperAdvertisement_IGPL.pdf",
+            "published_at": "02-Mar-2026 12:50:18",
+            "content_hash": "51aaeffb8d73f08be104a20f03dfc6db0a3add9fc89e43f17507e2fd3be170c6",
+            "relevance_score": 0.25,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": "INFY,TCS"
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "Allotment of Securities",
+            "body": "Allotment of Securities",
+            "url": "https://nsearchives.nseindia.com/corporate/THEJO_02032026124255_NSEIntimation_ESOP_20260302.pdf",
+            "published_at": "02-Mar-2026 12:44:23",
+            "content_hash": "57abf8892c2b4ae42253020bfb8c190af3ac12848a3cbcafdb1dd284ef1f18b8",
+            "relevance_score": 0.25,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "Shareholders meeting",
+            "body": "Shareholders meeting",
+            "url": "https://nsearchives.nseindia.com/corporate/KAMLESHS_02032026124356_SENoticeofEOGMsigned.pdf",
+            "published_at": "02-Mar-2026 12:44:08",
+            "content_hash": "d764e82b24b8eea7e6ea8ed15c2c28f0b477eced96b9bef0ee7959855d00bf0b",
+            "relevance_score": 0.25,
+            "is_catalyst": "NOISE",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "Pendency of Litigation(s)/dispute(s) or the outcome impacting the Company",
+            "body": "Pendency of Litigation(s)/dispute(s) or the outcome impacting the Company",
+            "url": "https://nsearchives.nseindia.com/corporate/PANACEABIO_02032026124116_DemandNotice01032026signed.pdf",
+            "published_at": "02-Mar-2026 12:41:43",
+            "content_hash": "2ec3a95e1179cfc5b80c7896c497e05c224bf6cdeeac55a2fd869c6b4f5aaec3",
+            "relevance_score": 0.25
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "Issue of Securities",
+            "body": "Issue of Securities",
+            "url": "https://nsearchives.nseindia.com/corporate/BHFL_02032026123812_SE_intimation_allotment_under_S33T9.pdf",
+            "published_at": "02-Mar-2026 12:39:21",
+            "content_hash": "34f9bb34d7a82781edb2bb6f7fd14805fe1f3f47445c2005dd5cd2aba2ed4646",
+            "relevance_score": 0.25,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "Outcome of Board Meeting",
+            "body": "Outcome of Board Meeting",
+            "url": "https://nsearchives.nseindia.com/corporate/BALKRISIND_02032026123110_Letter_to_Stock_Exchange02032026signed1.pdf",
+            "published_at": "02-Mar-2026 12:31:32",
+            "content_hash": "aa529bef27d54496717633e8978076da01f28b14c5e62779e9041ffb3694f393",
+            "relevance_score": 0.25,
+            "is_catalyst": "NOISE",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "Press Release",
+            "body": "Press Release",
+            "url": "https://nsearchives.nseindia.com/corporate/PRAJIND_02032026123058_InvestorsPresentation02032026.pdf",
+            "published_at": "02-Mar-2026 12:31:06",
+            "content_hash": "180c9abd7392671b20a7438ab3b9fe55dfbe981f3f783de7757dd0b203894e2c",
+            "relevance_score": 0.25,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": "INFY"
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "Updates",
+            "body": "Updates",
+            "url": "https://nsearchives.nseindia.com/corporate/TCS_CORPCS_02032026121825_PR_02Mar26_signed.pdf",
+            "published_at": "02-Mar-2026 12:30:06",
+            "content_hash": "22e2bada8f1c65cd83f4ba976f0027c5dd7cb81d5d2199cd1b0130792841eef4",
+            "relevance_score": 0.25,
+            "is_catalyst": "NOISE",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "nse_bulk_deal",
+            "headline": "JASUB PROPERTY HOLDINGS LLP bought COHANCE \u2014 7700000 shares",
+            "body": "{'date': '23-Feb-2026', 'symbol': 'COHANCE', 'name': 'Cohance Lifesciences Ltd', 'clientName': 'JASUB PROPERTY HOLDINGS LLP', 'buySell': 'BUY', 'qty': '7700000', 'watp': '306', 'remarks': None}",
+            "url": "",
+            "published_at": null,
+            "content_hash": "6a3dc21d4073ee72fe8624b441c2fe57859dd6dd97f6a68cec629d430e145987",
+            "relevance_score": 0.23
+        },
+        {
+            "source": "nse_bulk_deal",
+            "headline": "RASHESH CHANDRAKANT SHAH bought EDELWEISS \u2014 10000000 shares",
+            "body": "{'date': '23-Feb-2026', 'symbol': 'EDELWEISS', 'name': 'Edelweiss Fin Serv Ltd', 'clientName': 'RASHESH CHANDRAKANT SHAH', 'buySell': 'BUY', 'qty': '10000000', 'watp': '118', 'remarks': None}",
+            "url": "",
+            "published_at": null,
+            "content_hash": "9c55652f37c54b650095c79e8ca40bf649d78478c042ada84d6c43c5c3d51a73",
+            "relevance_score": 0.23,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": "EDELWEISS"
+        },
+        {
+            "source": "nse_bulk_deal",
+            "headline": "NEXG VENTURES INDIA PRIVATE LIMITED bought NETWORK18 \u2014 7100000 shares",
+            "body": "{'date': '23-Feb-2026', 'symbol': 'NETWORK18', 'name': 'Network18 Media & Inv Ltd', 'clientName': 'NEXG VENTURES INDIA PRIVATE LIMITED', 'buySell': 'BUY', 'qty': '7100000', 'watp': '35.5', 'remarks': None}",
+            "url": "",
+            "published_at": null,
+            "content_hash": "17249255eb94eebd346bf709b22c245be66800895549112470ddef245c2876e2",
+            "relevance_score": 0.23
+        },
+        {
+            "source": "nse_bulk_deal",
+            "headline": "JASTI FAMILY TRUST sold COHANCE \u2014 7700000 shares",
+            "body": "{'date': '23-Feb-2026', 'symbol': 'COHANCE', 'name': 'Cohance Lifesciences Ltd', 'clientName': 'JASTI FAMILY TRUST', 'buySell': 'SELL', 'qty': '7700000', 'watp': '306', 'remarks': None}",
+            "url": "",
+            "published_at": null,
+            "content_hash": "cc721e479adb025acb437ebf36a2e23937e02f12afbd104fc9276e6e715fdff1",
+            "relevance_score": 0.23,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": "COHANCE"
+        },
+        {
+            "source": "nse_bulk_deal",
+            "headline": "VENKATCHALAM ARAKONI RAMASWAMY sold EDELWEISS \u2014 10000000 shares",
+            "body": "{'date': '23-Feb-2026', 'symbol': 'EDELWEISS', 'name': 'Edelweiss Fin Serv Ltd', 'clientName': 'VENKATCHALAM ARAKONI RAMASWAMY', 'buySell': 'SELL', 'qty': '10000000', 'watp': '118', 'remarks': None}",
+            "url": "",
+            "published_at": null,
+            "content_hash": "a0986285eea3d55747246d9e5fb1ea82f869d478a501355c28924f7fcb1e8f8b",
+            "relevance_score": 0.23
+        },
+        {
+            "source": "nse_bulk_deal",
+            "headline": "ARIZONA GLOBALSERVICES PRIVATE LTD. sold NETWORK18 \u2014 7100000 shares",
+            "body": "{'date': '23-Feb-2026', 'symbol': 'NETWORK18', 'name': 'Network18 Media & Inv Ltd', 'clientName': 'ARIZONA GLOBALSERVICES PRIVATE LTD.', 'buySell': 'SELL', 'qty': '7100000', 'watp': '35.5', 'remarks': None}",
+            "url": "",
+            "published_at": null,
+            "content_hash": "4f4fb8b402b2eac95b50eb9c75eca1b2d9226b9262caa79fe86d80cbe6e4efbc",
+            "relevance_score": 0.23
+        },
+        {
+            "source": "economictimes",
+            "headline": "Best places to hide in war: 20 stocks analysts say to bet on amid US-Iran conflict",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/best-places-to-hide-in-war-20-stocks-analysts-say-to-bet-on-amid-us-iran-conflict/articleshow/128940309.cms",
+            "published_at": null,
+            "content_hash": "c38aafdab3327215288923600edf44b9ffe5fac57959cd62f48a4220ad057244",
+            "relevance_score": 0.22,
+            "is_catalyst": "NOISE",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "economictimes",
+            "headline": "Jefferies calls Israel-Iran conflict a buying opportunity; warns Hormuz, crude shock risks for India",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/jefferies-calls-israel-iran-conflict-a-buying-opportunity-warns-hormuz-crude-shock-risks-for-india/articleshow/128939979.cms",
+            "published_at": null,
+            "content_hash": "6a4cf8cf00f0b0ca93d1ebdebf05549b8f84ea4a837344b19e212ae864e0da99",
+            "relevance_score": 0.22
+        },
+        {
+            "source": "economictimes",
+            "headline": "Being tactical not an option, but a necessity: Prescription for war and volatility; 7 pharma stocks with upside potential of up to 39%",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/being-tactical-not-an-option-but-a-necessity-prescription-for-war-and-volatility-7-pharma-stocks-with-upside-potential-of-up-to-39/articleshow/128939812.cms",
+            "published_at": null,
+            "content_hash": "0e8b2e2e58ad32454acd0f408b59b990926f922232dfa792bfdf7a47ea426017",
+            "relevance_score": 0.22,
+            "is_catalyst": "NOISE",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "economictimes",
+            "headline": "Iran-Israel war: Over 30 listed Indian companies face Middle East exposure risk. Are you holding these stocks?",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/iran-israel-war-over-30-listed-indian-companies-face-middle-east-exposure-risk-are-you-holding-these-stocks/articleshow/128939432.cms",
+            "published_at": null,
+            "content_hash": "3009b105915e5e1f7a08942a97629f62f081e3514c14431b870e61a441ba971b",
+            "relevance_score": 0.22
+        },
+        {
+            "source": "economictimes",
+            "headline": "Asian Paints, other paint stocks plunge up to 6% as Israel-Iran war fuels rally in crude oil prices: What lies ahead?",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/asian-paints-other-paint-stocks-plunge-up-to-6-as-israel-iran-war-fuels-rally-in-crude-oil-prices-what-lies-ahead/articleshow/128938387.cms",
+            "published_at": null,
+            "content_hash": "e2ff2fe60f768966c483845b88ce1d7d13fe392d49ad3c9053cdea2ee73a3c16",
+            "relevance_score": 0.22
+        },
+        {
+            "source": "economictimes",
+            "headline": "Tejas Networks shares skyrocket 60% in just 4 sessions! What\u2019s triggering the sharp surge?",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/tejas-networks-shares-skyrocket-60-in-just-4-sessions-whats-triggering-the-sharp-surge/articleshow/128937931.cms",
+            "published_at": null,
+            "content_hash": "656a16ac34d778c64d90073b2b5152cbd7a392cfeee2e3879513ff68acb4fe24",
+            "relevance_score": 0.22,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": "TEJASNET"
+        },
+        {
+            "source": "economictimes",
+            "headline": "Stock Market holidays in March 2026: NSE, BSE to remain shut on 3 days this month; check list",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/market-holidays-in-march-2026-nse-bse-to-remain-shut-on-3-days-this-month-check-list/articleshow/128937700.cms",
+            "published_at": null,
+            "content_hash": "01df80055f13b6df9aaa6c67558defc8ac6010d3aaa6744ee04b4bc421d9a81c",
+            "relevance_score": 0.22
+        },
+        {
+            "source": "economictimes",
+            "headline": "Explained: What US-Israel war on Iran means for Indian stock market investors, crude oil and exports",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/explained-what-us-israel-war-on-iran-means-for-indian-stock-market-investors-crude-oil-and-exports/articleshow/128937348.cms",
+            "published_at": null,
+            "content_hash": "cf71820e3a2640c32d735d518d51ba15315847843b02cbca3728906fb94c5306",
+            "relevance_score": 0.22
+        },
+        {
+            "source": "economictimes",
+            "headline": "L&T shares crash over 7% as US\u2013Israel strike on Iran raises Mideast exposure risks. Company responds",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/lt-shares-crash-over-7-as-us-israel-attacks-on-iran-flag-middle-east-presence-check-details/articleshow/128937052.cms",
+            "published_at": null,
+            "content_hash": "f994bc0cd74b60d6b02dbc8574f886ff5b2c0a27150672f1f15cede5be1defbe",
+            "relevance_score": 0.22
+        },
+        {
+            "source": "economictimes",
+            "headline": "Fino Payments Bank shares plummet as much as 14% after CEO's arrest",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/fino-payments-bank-shares-plummet-as-much-as-14-after-ceos-arrest/articleshow/128936870.cms",
+            "published_at": null,
+            "content_hash": "cc445ba8acd6f723cd6286ff5700add91eacd7921e52f256c2b3f60452e0b95e",
+            "relevance_score": 0.22
+        },
+        {
+            "source": "economictimes",
+            "headline": "Top Nifty50 stocks analysts suggest buying in this volatile week",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/top-nifty50-stocks-analysts-suggest-buying-in-this-volatile-week/articleshow/128936557.cms",
+            "published_at": null,
+            "content_hash": "1dcedb2817c44d3ff4a6db8f1ff4890de41db4b4419a7f43c7888f197774ed05",
+            "relevance_score": 0.22
+        },
+        {
+            "source": "economictimes",
+            "headline": "Waaree Energies to Premiere Energies: Which solar stocks to bet on amid supply glut & US duty overhang?",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/waaree-energies-to-premiere-energies-which-solar-stocks-to-bet-on-amid-supply-glut-us-duty-overhang/articleshow/128936425.cms",
+            "published_at": null,
+            "content_hash": "e53932d39cb30d46eda78a2e4fcd62ec4062c46ef110250992288e7cf12de427",
+            "relevance_score": 0.22
+        },
+        {
+            "source": "economictimes",
+            "headline": "HAL, BDL, BEL, other defence stocks surge up to 13% as Iran-Israel war escalates; what to expect?",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/hal-bdl-other-defence-stocks-in-focus-as-war-in-middle-east-escalates-what-to-expect/articleshow/128935929.cms",
+            "published_at": null,
+            "content_hash": "4a56416a0b091e8025c6621813f87433d189d4d8149df950045ce7d008dce2f5",
+            "relevance_score": 0.22
+        },
+        {
+            "source": "economictimes",
+            "headline": "Stock Market Crash: Rs 9 lakh crore gone! Sensex slumps 1,600 pts, Nifty below 24,700 as US-Israel attack on Iran rattles markets",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/why-stock-market-is-falling-today-stock-market-crash-rs-7-8-lakh-cr-wiped-out-as-sensex-slumps-2700-pts-nifty-below-24700-middle-east-war-among-key-factors/articleshow/128935616.cms",
+            "published_at": null,
+            "content_hash": "6f09fb14dcc81b89e34810d7c7ace6967eb36adebfd07844115b16238d0be68c",
+            "relevance_score": 0.22
+        },
+        {
+            "source": "global_signals",
+            "headline": "\ud83d\udd34 Sgx Nifty: 24700.25 (-1.90%) | \ud83d\udd34 Dow Futures: 48385.0 (-1.26%) | \ud83d\udd34 Sp500 Futures: 6797.75 (-1.32%) | \ud83d\udfe2 Crude Oil: 72.4 (+8.03%) | \ud83d\udfe2 Gold: 5427.6 (+3.42%) | \ud83d\udfe2 Usd Inr: 91.43 (+0.44%) | \ud83d\udd34 Us 10Y: 3.962 (-1.37%)",
+            "body": "{'sgx_nifty': {'symbol': '^NSEI', 'price': 24700.25, 'previous_close': 25178.65, 'change_pct': -1.9, 'currency': 'INR'}, 'dow_futures': {'symbol': 'YM=F', 'price': 48385.0, 'previous_close': 49000.0, 'change_pct': -1.26, 'currency': 'USD'}, 'sp500_futures': {'symbol': 'ES=F', 'price': 6797.75, 'previous_close': 6889.0, 'change_pct': -1.32, 'currency': 'USD'}, 'crude_oil': {'symbol': 'CL=F', 'price': 72.4, 'previous_close': 67.02, 'change_pct': 8.03, 'currency': 'USD'}, 'gold': {'symbol': 'GC=F', 'price': 5427.6, 'previous_close': 5247.9, 'change_pct': 3.42, 'currency': 'USD'}, 'usd_inr': {'symbol': 'INR=X', 'price': 91.43, 'previous_close': 91.026, 'change_pct': 0.44, 'currency': 'INR'}, 'us_10y': {'symbol': '^TNX', 'price': 3.962, 'previous_close': 4.017, 'change_pct': -1.37, 'currency': 'USD'}}",
+            "url": "",
+            "published_at": null,
+            "content_hash": "cae44e20bfe323d554c42ff649cc253f3cf26168521e1bcb6570dd56b9dd5d62",
+            "relevance_score": 0.2,
+            "is_catalyst": "NOISE",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        }
+    ],
+    "catalysts": [
+        {
+            "source": "nse_announcement",
+            "headline": "Disclosure under SEBI Takeover Regulations",
+            "body": "Disclosure under SEBI Takeover Regulations",
+            "url": "https://nsearchives.nseindia.com/corporate/team_sandeshc_02032026123425_KIL_SAST.pdf",
+            "published_at": "02-Mar-2026 12:39:25",
+            "content_hash": "d9c17d625a6891a45699b13c567ba10401d152f72a4236251802732df3c2a7f5",
+            "relevance_score": 0.4,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "economictimes",
+            "headline": "Sebi deploys AI tool 'Sudarshan', removes 1.2 lakh misleading 'finfluencer' posts: Tuhin Kanta Pandey",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/sebi-deploys-ai-tool-sudarshan-removes-1-2-lakh-misleading-finfluencer-posts-tuhin-kanta-pandey/articleshow/128939153.cms",
+            "published_at": null,
+            "content_hash": "e10c677c23d935d6e1dc4cabb9ac8ca6388ac881511aff3bc037f9cb60f247f9",
+            "relevance_score": 0.37,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "Copy of Newspaper Publication",
+            "body": "Copy of Newspaper Publication",
+            "url": "https://nsearchives.nseindia.com/corporate/IGPL_02032026124855_NewspaperAdvertisement_IGPL.pdf",
+            "published_at": "02-Mar-2026 12:50:18",
+            "content_hash": "51aaeffb8d73f08be104a20f03dfc6db0a3add9fc89e43f17507e2fd3be170c6",
+            "relevance_score": 0.25,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": "INFY,TCS"
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "Allotment of Securities",
+            "body": "Allotment of Securities",
+            "url": "https://nsearchives.nseindia.com/corporate/THEJO_02032026124255_NSEIntimation_ESOP_20260302.pdf",
+            "published_at": "02-Mar-2026 12:44:23",
+            "content_hash": "57abf8892c2b4ae42253020bfb8c190af3ac12848a3cbcafdb1dd284ef1f18b8",
+            "relevance_score": 0.25,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "Issue of Securities",
+            "body": "Issue of Securities",
+            "url": "https://nsearchives.nseindia.com/corporate/BHFL_02032026123812_SE_intimation_allotment_under_S33T9.pdf",
+            "published_at": "02-Mar-2026 12:39:21",
+            "content_hash": "34f9bb34d7a82781edb2bb6f7fd14805fe1f3f47445c2005dd5cd2aba2ed4646",
+            "relevance_score": 0.25,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": ""
+        },
+        {
+            "source": "nse_announcement",
+            "headline": "Press Release",
+            "body": "Press Release",
+            "url": "https://nsearchives.nseindia.com/corporate/PRAJIND_02032026123058_InvestorsPresentation02032026.pdf",
+            "published_at": "02-Mar-2026 12:31:06",
+            "content_hash": "180c9abd7392671b20a7438ab3b9fe55dfbe981f3f783de7757dd0b203894e2c",
+            "relevance_score": 0.25,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": "INFY"
+        },
+        {
+            "source": "nse_bulk_deal",
+            "headline": "RASHESH CHANDRAKANT SHAH bought EDELWEISS \u2014 10000000 shares",
+            "body": "{'date': '23-Feb-2026', 'symbol': 'EDELWEISS', 'name': 'Edelweiss Fin Serv Ltd', 'clientName': 'RASHESH CHANDRAKANT SHAH', 'buySell': 'BUY', 'qty': '10000000', 'watp': '118', 'remarks': None}",
+            "url": "",
+            "published_at": null,
+            "content_hash": "9c55652f37c54b650095c79e8ca40bf649d78478c042ada84d6c43c5c3d51a73",
+            "relevance_score": 0.23,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": "EDELWEISS"
+        },
+        {
+            "source": "nse_bulk_deal",
+            "headline": "JASTI FAMILY TRUST sold COHANCE \u2014 7700000 shares",
+            "body": "{'date': '23-Feb-2026', 'symbol': 'COHANCE', 'name': 'Cohance Lifesciences Ltd', 'clientName': 'JASTI FAMILY TRUST', 'buySell': 'SELL', 'qty': '7700000', 'watp': '306', 'remarks': None}",
+            "url": "",
+            "published_at": null,
+            "content_hash": "cc721e479adb025acb437ebf36a2e23937e02f12afbd104fc9276e6e715fdff1",
+            "relevance_score": 0.23,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": "COHANCE"
+        },
+        {
+            "source": "economictimes",
+            "headline": "Tejas Networks shares skyrocket 60% in just 4 sessions! What\u2019s triggering the sharp surge?",
+            "body": null,
+            "url": "https://economictimes.indiatimes.com/markets/stocks/news/markets/stocks/news/tejas-networks-shares-skyrocket-60-in-just-4-sessions-whats-triggering-the-sharp-surge/articleshow/128937931.cms",
+            "published_at": null,
+            "content_hash": "656a16ac34d778c64d90073b2b5152cbd7a392cfeee2e3879513ff68acb4fe24",
+            "relevance_score": 0.22,
+            "is_catalyst": "CATALYST",
+            "catalyst_confidence": 0.8,
+            "related_symbols": "TEJASNET"
+        }
+    ],
+    "global_signals": {
+        "sgx_nifty": {
+            "symbol": "^NSEI",
+            "price": 24700.25,
+            "previous_close": 25178.65,
+            "change_pct": -1.9,
+            "currency": "INR"
+        },
+        "dow_futures": {
+            "symbol": "YM=F",
+            "price": 48385.0,
+            "previous_close": 49000.0,
+            "change_pct": -1.26,
+            "currency": "USD"
+        },
+        "sp500_futures": {
+            "symbol": "ES=F",
+            "price": 6797.75,
+            "previous_close": 6889.0,
+            "change_pct": -1.32,
+            "currency": "USD"
+        },
+        "crude_oil": {
+            "symbol": "CL=F",
+            "price": 72.4,
+            "previous_close": 67.02,
+            "change_pct": 8.03,
+            "currency": "USD"
+        },
+        "gold": {
+            "symbol": "GC=F",
+            "price": 5427.6,
+            "previous_close": 5247.9,
+            "change_pct": 3.42,
+            "currency": "USD"
+        },
+        "usd_inr": {
+            "symbol": "INR=X",
+            "price": 91.43,
+            "previous_close": 91.026,
+            "change_pct": 0.44,
+            "currency": "INR"
+        },
+        "us_10y": {
+            "symbol": "^TNX",
+            "price": 3.962,
+            "previous_close": 4.017,
+            "change_pct": -1.37,
+            "currency": "USD"
+        }
+    },
+    "stats": {
+        "total_raw": 42,
+        "after_cleaning": 34,
+        "after_ranking": 34,
+        "catalysts_found": 9,
+        "picks_generated": 1
+    }
+}
