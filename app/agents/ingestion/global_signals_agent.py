@@ -51,11 +51,12 @@ class GlobalSignalsAgent(BaseAgent):
 
         # Also produce a summary headline for the news feed
         headline = self._build_summary(signals)
+        body = self._build_detailed_body(signals)
         items = [
             {
                 "source": "global_signals",
                 "headline": headline,
-                "body": str(signals),
+                "body": body,
                 "url": "",
                 "published_at": None,
                 "content_hash": hashlib.sha256(headline.encode()).hexdigest(),
@@ -100,3 +101,22 @@ class GlobalSignalsAgent(BaseAgent):
                     f"{data.get('price')} ({data.get('change_pct'):+.2f}%)"
                 )
         return " | ".join(parts) if parts else "Global signals unavailable"
+
+    @staticmethod
+    def _build_detailed_body(signals: dict) -> str:
+        """Build a structured, LLM-friendly body from global signals data."""
+        lines = ["Global Market Signals Summary:"]
+        for label, data in signals.items():
+            name = label.replace("_", " ").title()
+            if "error" in data:
+                lines.append(f"- {name}: Data unavailable ({data['error']})")
+            else:
+                price = data.get("price", "N/A")
+                prev = data.get("previous_close", "N/A")
+                change = data.get("change_pct", 0)
+                currency = data.get("currency", "")
+                direction = "up" if change >= 0 else "down"
+                lines.append(
+                    f"- {name}: {price} {currency} ({direction} {abs(change):.2f}% from previous close of {prev})"
+                )
+        return "\n".join(lines)

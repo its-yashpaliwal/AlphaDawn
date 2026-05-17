@@ -59,19 +59,39 @@ class ExchangeAgent(BaseAgent):
             resp.raise_for_status()
             data = resp.json()
 
-            return [
-                {
+            results = []
+            for item in data[:20]:
+                symbol = item.get("symbol", "")
+                company = item.get("companyName", "")
+                desc = item.get("desc", "")
+                subject = item.get("attchmntText", "") or item.get("smIndustry", "") or ""
+
+                # Build a meaningful headline: "RELIANCE — Outcome of Board Meeting"
+                headline = f"{symbol} — {desc}" if symbol else desc
+
+                # Build an informative body for the LLM
+                body_parts = []
+                if company:
+                    body_parts.append(f"Company: {company}")
+                if symbol:
+                    body_parts.append(f"Symbol: {symbol}")
+                body_parts.append(f"Category: {desc}")
+                if subject:
+                    body_parts.append(f"Subject: {subject}")
+                body = ". ".join(body_parts)
+
+                # Use symbol + desc + date for a unique hash
+                hash_input = f"{symbol}:{desc}:{item.get('an_dt', '')}"
+
+                results.append({
                     "source": "nse_announcement",
-                    "headline": item.get("desc", "")[:256],
-                    "body": item.get("desc", ""),
+                    "headline": headline[:256],
+                    "body": body,
                     "url": item.get("attchmntFile", ""),
                     "published_at": item.get("an_dt"),
-                    "content_hash": hashlib.sha256(
-                        item.get("desc", "").encode()
-                    ).hexdigest(),
-                }
-                for item in data[:20]
-            ]
+                    "content_hash": hashlib.sha256(hash_input.encode()).hexdigest(),
+                })
+            return results
         except Exception as exc:
             logger.warning(f"  ⚠️  NSE announcements failed: {exc}")
             return []
@@ -123,19 +143,39 @@ class ExchangeAgent(BaseAgent):
                 logger.warning(f"  ⚠️  BSE response was not JSON: {resp.text[:100]}...")
                 return []
 
-            return [
-                {
+            results = []
+            for item in data[:20]:
+                scrip_code = item.get("SCRIP_CD", "")
+                company = item.get("SLONGNAME", "") or item.get("SCOMPNAME", "")
+                subject = item.get("NEWSSUB", "")
+                category = item.get("CATEGORYNAME", "")
+
+                # Build a meaningful headline
+                headline = f"{company} — {subject}" if company else subject
+
+                # Build an informative body for the LLM
+                body_parts = []
+                if company:
+                    body_parts.append(f"Company: {company}")
+                if scrip_code:
+                    body_parts.append(f"BSE Code: {scrip_code}")
+                if category:
+                    body_parts.append(f"Category: {category}")
+                body_parts.append(f"Subject: {subject}")
+                body = ". ".join(body_parts)
+
+                # Use company + subject + date for uniqueness
+                hash_input = f"{company}:{subject}:{item.get('NEWS_DT', '')}"
+
+                results.append({
                     "source": "bse_announcement",
-                    "headline": item.get("NEWSSUB", "")[:256],
-                    "body": item.get("NEWSSUB", ""),
+                    "headline": headline[:256],
+                    "body": body,
                     "url": item.get("NSURL", ""),
                     "published_at": item.get("NEWS_DT"),
-                    "content_hash": hashlib.sha256(
-                        item.get("NEWSSUB", "").encode()
-                    ).hexdigest(),
-                }
-                for item in data[:20]
-            ]
+                    "content_hash": hashlib.sha256(hash_input.encode()).hexdigest(),
+                })
+            return results
         except Exception as exc:
             logger.warning(f"  ⚠️  BSE announcements failed: {exc}")
             return []

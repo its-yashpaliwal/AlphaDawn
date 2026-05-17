@@ -34,6 +34,7 @@ export default function PaperTrading() {
                             <thead>
                                 <tr>
                                     <th>Symbol</th>
+                                    <th>Buy Date</th>
                                     <th>Direction</th>
                                     <th>Entry</th>
                                     <th>Target</th>
@@ -48,6 +49,9 @@ export default function PaperTrading() {
                                 {watchlist.map((item) => (
                                     <tr key={item.symbol}>
                                         <td style={{ fontWeight: 600 }}>{item.symbol}</td>
+                                        <td style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+                                            {item.buy_date ? new Date(item.buy_date).toLocaleDateString() : '—'}
+                                        </td>
                                         <td>
                                             <span className={`pick-direction ${item.direction?.toLowerCase()}`}>
                                                 {item.direction}

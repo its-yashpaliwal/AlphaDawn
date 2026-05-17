@@ -20,6 +20,7 @@ class WatchlistItem(BaseModel):
     stop_loss: float
     direction: str
     catalyst_summary: str = ""
+    buy_date: str = ""
 
 def load_watchlist() -> list[dict]:
     if not os.path.exists(DATA_FILE):
@@ -37,11 +38,15 @@ def save_watchlist(data: list[dict]):
 
 @router.post("/add")
 async def add_to_watchlist(item: WatchlistItem):
+    from datetime import datetime, timezone
     watchlist = load_watchlist()
     # Check if already exists
     if any(i["symbol"].upper() == item.symbol.upper() for i in watchlist):
         return {"status": "exists", "message": f"{item.symbol} is already in watchlist"}
     
+    if not item.buy_date:
+        item.buy_date = datetime.now(timezone.utc).isoformat()
+        
     watchlist.append(item.model_dump())
     save_watchlist(watchlist)
     return {"status": "success", "message": f"Added {item.symbol} to paper trades"}

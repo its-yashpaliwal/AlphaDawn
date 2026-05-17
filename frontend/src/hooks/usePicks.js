@@ -97,7 +97,7 @@ export function usePickHistory() {
     return { history, loading };
 }
 
-export function usePaperTrade() {
+export function usePaperTrade(fetchOnMount = true) {
     const [watchlist, setWatchlist] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -130,7 +130,7 @@ export function usePaperTrade() {
             });
             const data = await res.json();
             if (data.status === 'success') {
-                await fetchWatchlist();
+                if (fetchOnMount) await fetchWatchlist();
                 return true;
             }
             return false;
@@ -143,15 +143,19 @@ export function usePaperTrade() {
     const removeFromWatchlist = async (symbol) => {
         try {
             await fetch(`${API_BASE}/paper-trade/remove/${symbol}`, { method: 'DELETE' });
-            await fetchWatchlist();
+            if (fetchOnMount) await fetchWatchlist();
         } catch (err) {
             console.error('Failed to remove from watchlist:', err);
         }
     };
 
     useEffect(() => {
-        fetchWatchlist();
-    }, []);
+        if (fetchOnMount) {
+            fetchWatchlist();
+        } else {
+            setLoading(false);
+        }
+    }, [fetchOnMount]);
 
     return { watchlist, loading, addToWatchlist, removeFromWatchlist, refresh: fetchWatchlist };
 }

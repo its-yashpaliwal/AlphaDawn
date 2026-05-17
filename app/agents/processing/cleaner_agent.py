@@ -20,6 +20,7 @@ class CleanerAgent(BaseAgent):
         logger.info(f"  🧹  Cleaning {len(raw_items)} raw items")
 
         seen_hashes: set[str] = set()
+        seen_urls: set[str] = set()
         cleaned: list[dict] = []
 
         for item in raw_items:
@@ -30,10 +31,17 @@ class CleanerAgent(BaseAgent):
                 continue
             seen_hashes.add(content_hash)
 
+            # ── Dedup by URL (same article from different sources) ──
+            url = item.get("url", "")
+            if url and url in seen_urls:
+                continue
+            if url:
+                seen_urls.add(url)
+
             # ── Normalise fields ──
             item["headline"] = self._normalise_text(item.get("headline", ""))
             if item.get("body"):
-                item["body"] = self._normalise_text(item["body"])
+                item["body"] = self._normalise_body(item["body"])
 
             # ── Drop empty headlines ──
             if not item["headline"]:
@@ -48,9 +56,26 @@ class CleanerAgent(BaseAgent):
 
     @staticmethod
     def _normalise_text(text: str) -> str:
-        """Strip whitespace, collapse multiple spaces, remove control characters."""
+        """Normalise a single-line field like headline — collapse all whitespace."""
         import re
         text = text.strip()
         text = re.sub(r"\s+", " ", text)
-        text = re.sub(r"[\x00-\x1f\x7f-\x9f]", "", text)
+        # Remove control characters but preserve standard whitespace
+        text = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]", "", text)
         return text
+
+    @staticmethod
+    def _normalise_body(text: str) -> str:
+        """Normalise body text — preserve newlines for structured content."""
+        import re
+        # Normalise each line individually to preserve structure
+        lines = text.split("\n")
+        cleaned_lines = []
+        for line in lines:
+            line = line.strip()
+            line = re.sub(r"[ \t]+", " ", line)  # collapse spaces/tabs but not newlines
+            line = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f-\x9f]", "", line)
+            if line:  # drop blank lines
+                cleaned_lines.append(line)
+        return "\n".join(cleaned_lines)
+

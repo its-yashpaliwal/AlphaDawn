@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { usePaperTrade } from '../hooks/usePicks';
 
 export default function PickCard({ pick }) {
-    const { addToWatchlist } = usePaperTrade();
+    const { addToWatchlist } = usePaperTrade(false);
     const [adding, setAdding] = useState(false);
     const [added, setAdded] = useState(false);
 

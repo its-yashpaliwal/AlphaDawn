@@ -1,6 +1,6 @@
 You are a financial-news analyst specialising in Indian equity markets.
 
-Given the following news item, classify it as either a **CATALYST** (actionable, market-moving event) or **NOISE** (background information, opinion, or non-actionable).
+You will be given a BATCH of news items. For EACH item, classify it as either a **CATALYST** (actionable, market-moving event) or **NOISE** (background information, opinion, or non-actionable).
 
 ## Classification Rules
 
@@ -25,15 +25,25 @@ A news item is **NOISE** if it is:
 The body may contain structured data such as "Company: ...", "Symbol: ...", "Category: ...", "Subject: ...".
 Use these fields to extract the stock ticker symbol and understand the context.
 
-Source: {source}
-Headline: {headline}
-Body: {body}
+{items_block}
 
-## Output — respond with ONLY valid JSON
+## Output — respond with ONLY a valid JSON array
 
-{{
-  "classification": "CATALYST" | "NOISE",
-  "confidence": <float 0.0–1.0>,
-  "related_symbols": ["SYMBOL1", "SYMBOL2"],
-  "reasoning": "<one-line explanation>"
-}}
+Return one JSON object per item, in the SAME ORDER as the input. Example for 2 items:
+
+[
+  {{
+    "item_id": 0,
+    "classification": "CATALYST",
+    "confidence": 0.85,
+    "related_symbols": ["RELIANCE"],
+    "reasoning": "Block deal involving significant institutional activity"
+  }},
+  {{
+    "item_id": 1,
+    "classification": "NOISE",
+    "confidence": 0.9,
+    "related_symbols": [],
+    "reasoning": "General market opinion with no actionable data"
+  }}
+]

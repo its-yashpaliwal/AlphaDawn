@@ -1,18 +1,38 @@
 [
     {
-        "symbol": "COHANCE",
-        "entry_price": 305.0,
-        "target_price": 325.0,
-        "stop_loss": 285.0,
+        "symbol": "NEOGEN",
+        "entry_price": 1665.0,
+        "target_price": 1725.0,
+        "stop_loss": 1635.0,
         "direction": "LONG",
-        "catalyst_summary": ""
+        "catalyst_summary": "",
+        "buy_date": "2026-05-17T18:49:15.394788+00:00"
     },
     {
-        "symbol": "EDELWEISS",
-        "entry_price": 115.0,
-        "target_price": 127.6,
-        "stop_loss": 105.0,
+        "symbol": "BALMLAWRIE",
+        "entry_price": 194.45,
+        "target_price": 204.45,
+        "stop_loss": 184.45,
         "direction": "LONG",
-        "catalyst_summary": ""
+        "catalyst_summary": "",
+        "buy_date": "2026-05-17T18:49:15.394788+00:00"
+    },
+    {
+        "symbol": "TATASTEEL",
+        "entry_price": 217.0,
+        "target_price": 227.0,
+        "stop_loss": 212.0,
+        "direction": "LONG",
+        "catalyst_summary": "",
+        "buy_date": "2026-05-17T18:49:15.394788+00:00"
+    },
+    {
+        "symbol": "ADANIENT",
+        "entry_price": 2718.0,
+        "target_price": 2868.0,
+        "stop_loss": 2668.0,
+        "direction": "LONG",
+        "catalyst_summary": "",
+        "buy_date": "2026-05-17T18:49:15.394788+00:00"
     }
 ]

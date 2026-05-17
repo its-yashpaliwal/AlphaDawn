@@ -36,7 +36,7 @@ class Orchestrator(BaseAgent):
     def __init__(self):
         # Ingestion agents run concurrently
         self.ingestion_agents = [
-            TwitterAgent(),
+            # TwitterAgent(),
             NewsScraperAgent(),
             ExchangeAgent(),
             GlobalSignalsAgent(),

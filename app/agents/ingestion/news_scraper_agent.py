@@ -92,11 +92,22 @@ class NewsScraperAgent(BaseAgent):
             if href and not href.startswith("http"):
                 href = source["url"].rstrip("/") + "/" + href.lstrip("/")
 
+            # Try to extract a snippet from the surrounding element
+            snippet = self._extract_snippet(link)
+
+            # Build an informative body for the LLM
+            source_name = source["name"].replace("_", " ").title()
+            body_parts = [f"Source: {source_name}"]
+            body_parts.append(f"Headline: {headline}")
+            if snippet:
+                body_parts.append(f"Summary: {snippet}")
+            body = ". ".join(body_parts)
+
             articles.append(
                 {
                     "source": source["name"],
                     "headline": headline,
-                    "body": None,  # Body can be fetched lazily if needed
+                    "body": body,
                     "url": href,
                     "published_at": None,
                     "content_hash": hashlib.sha256(headline.encode()).hexdigest(),
@@ -104,3 +115,17 @@ class NewsScraperAgent(BaseAgent):
             )
 
         return articles
+
+    @staticmethod
+    def _extract_snippet(link_element) -> str:
+        """Try to grab a summary/description near the headline link."""
+        # Look for a sibling or parent paragraph element
+        parent = link_element.find_parent(["li", "div", "article"])
+        if parent:
+            # Look for a <p> tag nearby
+            para = parent.find("p")
+            if para:
+                text = para.get_text(strip=True)
+                if len(text) > 20:
+                    return text[:500]
+        return ""
