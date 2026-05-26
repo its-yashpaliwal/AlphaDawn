@@ -1,38 +1,102 @@
 [
     {
-        "symbol": "NEOGEN",
-        "entry_price": 1665.0,
-        "target_price": 1725.0,
-        "stop_loss": 1635.0,
-        "direction": "LONG",
+        "symbol": "COCHINSHIP",
+        "entry_price": 1483.5,
+        "target_price": 1393.5,
+        "stop_loss": 1528.5,
+        "direction": "SHORT",
         "catalyst_summary": "",
-        "buy_date": "2026-05-17T18:49:15.394788+00:00"
+        "buy_date": "2026-05-18T07:00:53.571099+00:00",
+        "invested_amount": 10000.0
     },
     {
-        "symbol": "BALMLAWRIE",
-        "entry_price": 194.45,
-        "target_price": 204.45,
-        "stop_loss": 184.45,
-        "direction": "LONG",
+        "symbol": "KAYNES",
+        "entry_price": 3116.8,
+        "target_price": 2900.0,
+        "stop_loss": 3225.0,
+        "direction": "SHORT",
         "catalyst_summary": "",
-        "buy_date": "2026-05-17T18:49:15.394788+00:00"
+        "buy_date": "2026-05-18T07:00:58.666282+00:00",
+        "invested_amount": 10000.0
     },
     {
-        "symbol": "TATASTEEL",
-        "entry_price": 217.0,
-        "target_price": 227.0,
-        "stop_loss": 212.0,
-        "direction": "LONG",
+        "symbol": "AMBER",
+        "entry_price": 7112.5,
+        "target_price": 6662.5,
+        "stop_loss": 7337.5,
+        "direction": "SHORT",
         "catalyst_summary": "",
-        "buy_date": "2026-05-17T18:49:15.394788+00:00"
+        "buy_date": "2026-05-18T07:01:00.099603+00:00",
+        "invested_amount": 10000.0
     },
     {
-        "symbol": "ADANIENT",
-        "entry_price": 2718.0,
-        "target_price": 2868.0,
-        "stop_loss": 2668.0,
+        "symbol": "PIIND",
+        "entry_price": 2919.8,
+        "target_price": 2739.8,
+        "stop_loss": 3009.8,
+        "direction": "SHORT",
+        "catalyst_summary": "",
+        "buy_date": "2026-05-20T05:20:59.070854+00:00",
+        "invested_amount": 10000.0
+    },
+    {
+        "symbol": "JSWSTEEL",
+        "entry_price": 1268.0,
+        "target_price": 1328.0,
+        "stop_loss": 1238.0,
         "direction": "LONG",
         "catalyst_summary": "",
-        "buy_date": "2026-05-17T18:49:15.394788+00:00"
+        "buy_date": "2026-05-20T05:21:10.852620+00:00",
+        "invested_amount": 10000.0
+    },
+    {
+        "symbol": "BSE",
+        "entry_price": 4160.0,
+        "target_price": 4350.0,
+        "stop_loss": 4060.0,
+        "direction": "LONG",
+        "catalyst_summary": "",
+        "buy_date": "2026-05-20T05:21:18.168911+00:00",
+        "invested_amount": 10000.0
+    },
+    {
+        "symbol": "PACEDIGITK",
+        "entry_price": 190.4,
+        "target_price": 210.4,
+        "stop_loss": 180.4,
+        "direction": "LONG",
+        "catalyst_summary": "",
+        "buy_date": "2026-05-25T19:11:59.554578+00:00",
+        "invested_amount": 10000.0
+    },
+    {
+        "symbol": "JSWENERGY",
+        "entry_price": 557.05,
+        "target_price": 587.05,
+        "stop_loss": 542.05,
+        "direction": "LONG",
+        "catalyst_summary": "",
+        "buy_date": "2026-05-25T19:12:19.621689+00:00",
+        "invested_amount": 10000.0
+    },
+    {
+        "symbol": "MEDANTA",
+        "entry_price": 1249.3,
+        "target_price": 1309.3,
+        "stop_loss": 1219.3,
+        "direction": "LONG",
+        "catalyst_summary": "",
+        "buy_date": "2026-05-25T19:12:20.900379+00:00",
+        "invested_amount": 10000.0
+    },
+    {
+        "symbol": "PREMIERENE",
+        "entry_price": 985.0,
+        "target_price": 1045.0,
+        "stop_loss": 955.0,
+        "direction": "LONG",
+        "catalyst_summary": "",
+        "buy_date": "2026-05-25T19:12:22.868547+00:00",
+        "invested_amount": 10000.0
     }
 ]

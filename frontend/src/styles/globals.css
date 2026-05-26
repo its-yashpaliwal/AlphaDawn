@@ -119,6 +119,13 @@ a:hover { color: var(--accent-cyan); }
   left: 0;
   height: 100vh;
   z-index: 100;
+  transition: width 0.3s ease, padding 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar.collapsed {
+  width: 72px;
+  padding: 24px 12px;
 }
 
 .sidebar-logo {
@@ -131,6 +138,8 @@ a:hover { color: var(--accent-cyan); }
   padding: 8px 12px;
   margin-bottom: 16px;
   letter-spacing: -0.5px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .sidebar-logo span {
@@ -154,6 +163,14 @@ a:hover { color: var(--accent-cyan); }
   font-size: 0.9rem;
   transition: all 0.2s ease;
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar.collapsed .nav-link {
+  justify-content: center;
+  padding: 12px;
+  gap: 0;
 }
 
 .nav-link:hover {
@@ -166,14 +183,46 @@ a:hover { color: var(--accent-cyan); }
   color: var(--accent-purple);
 }
 
-.nav-link .icon { font-size: 1.1rem; }
+.nav-link .icon { font-size: 1.1rem; flex-shrink: 0; }
+
+/* ── Sidebar Toggle Button ─────────────────────────────────────── */
+.sidebar-toggle {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(124, 92, 255, 0.12);
+  border: 1px solid var(--border-color);
+  color: var(--accent-purple);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.sidebar-toggle:hover {
+  background: rgba(124, 92, 255, 0.25);
+  border-color: var(--border-glow);
+  box-shadow: 0 0 12px rgba(124, 92, 255, 0.2);
+  transform: translateX(-50%) scale(1.08);
+}
 
 .main-content {
   margin-left: 260px;
   flex: 1;
   padding: 32px;
   max-width: 1200px;
+  transition: margin-left 0.3s ease;
 }
+
+.sidebar-collapsed .main-content {
+  margin-left: 72px;
+}
+
 
 .page-header {
   margin-bottom: 28px;
@@ -676,7 +725,7 @@ a:hover { color: var(--accent-cyan); }
 }
 
 @media (max-width: 768px) {
-  .sidebar {
+  .sidebar, .sidebar.collapsed {
     width: 100%;
     height: auto;
     position: relative;
@@ -685,6 +734,11 @@ a:hover { color: var(--accent-cyan); }
     padding: 12px;
     gap: 4px;
   }
+
+  .sidebar-toggle { display: none; }
+
+  .sidebar-collapsed .main-content { margin-left: 0; }
+
 
   .sidebar-logo span { display: none; }
 

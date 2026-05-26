@@ -142,10 +142,13 @@ export function usePaperTrade(fetchOnMount = true) {
 
     const removeFromWatchlist = async (symbol) => {
         try {
-            await fetch(`${API_BASE}/paper-trade/remove/${symbol}`, { method: 'DELETE' });
+            const res = await fetch(`${API_BASE}/paper-trade/remove/${symbol}`, { method: 'DELETE' });
+            const data = await res.json();
             if (fetchOnMount) await fetchWatchlist();
+            return data;
         } catch (err) {
             console.error('Failed to remove from watchlist:', err);
+            return null;
         }
     };
 
@@ -158,4 +161,30 @@ export function usePaperTrade(fetchOnMount = true) {
     }, [fetchOnMount]);
 
     return { watchlist, loading, addToWatchlist, removeFromWatchlist, refresh: fetchWatchlist };
+}
+
+export function usePaperTradeHistory() {
+    const [history, setHistory] = useState([]);
+    const [summary, setSummary] = useState({});
+    const [loading, setLoading] = useState(true);
+
+    const fetchHistory = async () => {
+        try {
+            setLoading(true);
+            const res = await fetch(`${API_BASE}/paper-trade/history`);
+            const data = await res.json();
+            setHistory(data.history || []);
+            setSummary(data.summary || {});
+        } catch (err) {
+            console.error('Failed to fetch trade history:', err);
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    useEffect(() => {
+        fetchHistory();
+    }, []);
+
+    return { history, summary, loading, refresh: fetchHistory };
 }
